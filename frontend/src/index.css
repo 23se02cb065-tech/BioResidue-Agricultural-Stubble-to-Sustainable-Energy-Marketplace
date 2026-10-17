@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green: #22c55e;
+  --green-light: #4ade80;
+  --green-muted: #86efac;
+  --bg: #060d0a;
+  --surface: rgba(255,255,255,0.04);
+  --border: rgba(74,222,128,0.15);
+  --text: #f0fdf4;
+  --text-muted: #6ee7b7;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+a { text-decoration: none; }
+
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+.loading-full {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Leaflet popup dark theme */
+.leaflet-popup-content-wrapper {
+  background: #0f2b1a !important;
+  color: #f0fdf4 !important;
+  border: 1px solid rgba(74,222,128,0.25) !important;
+  border-radius: 10px !important;
+}
+
+.leaflet-popup-tip {
+  background: #0f2b1a !important;
+}
